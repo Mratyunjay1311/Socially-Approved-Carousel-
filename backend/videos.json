@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "Video 1",
+    "description": "First Video",
+    "videoUrl": "https://samplelib.com/lib/preview/mp4/sample-5s.mp4",
+    "likes": 122,
+    "shares": 16
+  },
+  {
+    "id": 2,
+    "title": "Video 2",
+    "description": "Second Video",
+    "videoUrl": "https://samplelib.com/lib/preview/mp4/sample-10s.mp4",
+    "likes": 50,
+    "shares": 9
+  },
+  {
+    "id": 3,
+    "title": "Video 3",
+    "description": "Travel Vlog",
+    "videoUrl": "https://samplelib.com/lib/preview/mp4/sample-15s.mp4",
+    "likes": 215,
+    "shares": 31
+  },
+  {
+    "id": 4,
+    "title": "Video 4",
+    "description": "Nature Clips",
+    "videoUrl": "https://samplelib.com/lib/preview/mp4/sample-20s.mp4",
+    "likes": 178,
+    "shares": 24
+  },
+  {
+    "id": 5,
+    "title": "Video 5",
+    "description": "Coding Tutorial",
+    "videoUrl": "https://samplelib.com/lib/preview/mp4/sample-30s.mp4",
+    "likes": 340,
+    "shares": 45
+  },
+  {
+    "id": 6,
+    "title": "Video 6",
+    "description": "JavaScript Basics",
+    "videoUrl": "https://samplelib.com/lib/preview/mp4/sample-5mb.mp4",
+    "likes": 290,
+    "shares": 39
+  },
+  {
+    "id": 7,
+    "title": "Video 7",
+    "description": "React Tutorial",
+    "videoUrl": "https://samplelib.com/lib/preview/mp4/sample-5s.mp4",
+    "likes": 410,
+    "shares": 60
+  },
+  {
+    "id": 8,
+    "title": "Video 8",
+    "description": "Node.js Backend",
+    "videoUrl": "https://samplelib.com/lib/preview/mp4/sample-10s.mp4",
+    "likes": 355,
+    "shares": 52
+  },
+  {
+    "id": 9,
+    "title": "Video 9",
+    "description": "Express API Guide",
+    "videoUrl": "https://samplelib.com/lib/preview/mp4/sample-15s.mp4",
+    "likes": 270,
+    "shares": 37
+  },
+  {
+    "id": 10,
+    "title": "Video 10",
+    "description": "MongoDB Tutorial",
+    "videoUrl": "https://samplelib.com/lib/preview/mp4/sample-20s.mp4",
+    "likes": 312,
+    "shares": 41
+  },
+  {
+    "id": 11,
+    "title": "Video 11",
+    "description": "CSS Animation",
+    "videoUrl": "https://samplelib.com/lib/preview/mp4/sample-30s.mp4",
+    "likes": 198,
+    "shares": 28
+  },
+  {
+    "id": 12,
+    "title": "Video 12",
+    "description": "Portfolio Showcase",
+    "videoUrl": "https://samplelib.com/lib/preview/mp4/sample-5mb.mp4",
+    "likes": 152,
+    "shares": 22
+  },
+  {
+    "id": 13,
+    "title": "Video 13",
+    "description": "UI Design Inspiration",
+    "videoUrl": "https://samplelib.com/lib/preview/mp4/sample-5s.mp4",
+    "likes": 241,
+    "shares": 35
+  },
+  {
+    "id": 14,
+    "title": "Video 14",
+    "description": "Frontend Project Demo",
+    "videoUrl": "https://samplelib.com/lib/preview/mp4/sample-10s.mp4",
+    "likes": 389,
+    "shares": 58
+  },
+  {
+    "id": 15,
+    "title": "Video 15",
+    "description": "Full Stack Application",
+    "videoUrl": "https://samplelib.com/lib/preview/mp4/sample-15s.mp4",
+    "likes": 475,
+    "shares": 72
+  }
+]
