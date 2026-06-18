@@ -1,7 +1,7 @@
 import axios from "axios"
 
 const api = axios.create({
-    baseURL:'http://localhost:5000'
+    baseURL:'https://socially-approved-carousel-x1ed.onrender.com'
 })
 
 export default api
