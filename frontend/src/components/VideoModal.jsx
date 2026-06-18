@@ -1,16 +1,22 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import VideoPlayer from "./VideoPlayer";
+import { useState } from "react";
 
 function VideoModal({
   videos,
   selectedVideo,
   onClose
 }) {
+
+    const [activeIndex,setActiveIndex] = useState(0)
   if (!selectedVideo) return null;
 
   const initialIndex = videos.findIndex(
     (video) => video.id === selectedVideo.id
-  );
+  )
+
+  
 
   return (
     <div
@@ -37,19 +43,15 @@ function VideoModal({
 
         <Swiper
           initialSlide={initialIndex}
-          spaceBetween={20}
-          slidesPerView={3}
+          spaceBetween={2}
+           spaceBetween={20}
+          onSlideChange={(swiper)=>{
+      setActiveIndex(swiper.activeIndex)
+  }}
         >
           {videos.map((video) => (
             <SwiperSlide key={video.id}>
-              <video
-                src={video.videoUrl}
-                controls
-                style={{
-                  width: "100%",
-                  borderRadius: "10px",
-                }}
-              />
+            <VideoPlayer video={video}  isActive={initialIndex === activeIndex}/>
 
               <h4>{video.title}</h4>
             </SwiperSlide>

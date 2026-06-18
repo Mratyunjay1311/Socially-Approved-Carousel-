@@ -3,11 +3,13 @@ function VideoCard({ video, onVideoClick,handleLike,handleShare}) {
     <div
       onClick={() => onVideoClick(video)}
       style={{
-        minWidth: "250px",
-        cursor: "pointer",
-        border: "1px solid #ddd",
-        borderRadius: "10px",
+        minWidth: "260px",
+        borderRadius: "12px",
         overflow: "hidden",
+        cursor: "pointer",
+        background: "#fff",
+        boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
+        transition: "0.2s",
       }}
     >
       <video
@@ -26,8 +28,8 @@ function VideoCard({ video, onVideoClick,handleLike,handleShare}) {
        <button
   onClick={(e) => {
     e.stopPropagation();
-    handleLike(video.id);
-  }}
+    handleLike(video.id); 
+  }} style={{ display: "flex", justifyContent: "space-between" }}
 >
   ❤️ {video.likes}
 </button>
