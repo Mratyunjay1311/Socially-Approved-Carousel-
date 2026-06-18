@@ -3,14 +3,14 @@ import useVideoObserver from "../hooks/useVideoObserver";
 
 function VideoPlayer({ video,isActive}) {
 
-    const [isPlaying, setIsPlaying] = useState(false);
-const [isMuted, setIsMuted] = useState(true);
-const [progress, setProgress] = useState(0);
-const [loading, setLoading] = useState(true);
+    const [isPlaying, setIsPlaying] = useState(false)
+const [isMuted, setIsMuted] = useState(true)
+const [progress, setProgress] = useState(0)
+const [loading, setLoading] = useState(true)
 
-  const videoRef = useRef(null);
+  const videoRef = useRef(null)
 
-  useVideoObserver(videoRef);
+  useVideoObserver(videoRef)
 
   useEffect(()=>{
 
@@ -26,40 +26,40 @@ const [loading, setLoading] = useState(true);
 
 const handleTimeUpdate = () => {
 
-  const video = videoRef.current;
+  const video = videoRef.current
 
   const percentage =
-    (video.currentTime / video.duration) * 100;
+    (video.currentTime / video.duration) * 100
 
-  setProgress(percentage);
-};
+  setProgress(percentage)
+}
 
 const togglePlay = () => {
 
-  const video = videoRef.current;
+  const video = videoRef.current
 
   if (video.paused) {
 
-    video.play();
+    video.play()
 
-    setIsPlaying(true);
+    setIsPlaying(true)
 
   } else {
 
-    video.pause();
+    video.pause()
 
-    setIsPlaying(false);
+    setIsPlaying(false)
   }
-};
+}
 
 const toggleMute = () => {
 
-  const video = videoRef.current;
+  const video = videoRef.current
 
-  video.muted = !video.muted;
+  video.muted = !video.muted
 
-  setIsMuted(video.muted);
-};
+  setIsMuted(video.muted)
+}
 
   return (
    <>

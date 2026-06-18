@@ -12,26 +12,26 @@ function useVideoObserver(videoRef) {
         if (!video) return;
 
         if (entry.isIntersecting) {
-          video.play();
+          video.play()
         } else {
-          video.pause();
+          video.pause()
         }
 
       },
       {
-        threshold: 0.6,
+        threshold: 0.6
       }
     );
 
     if (videoRef.current) {
-      observer.observe(videoRef.current);
+      observer.observe(videoRef.current)
     }
 
     return () => {
-      observer.disconnect();
+      observer.disconnect()
     };
 
-  }, [videoRef]);
+  }, [videoRef])
 
 }
 
